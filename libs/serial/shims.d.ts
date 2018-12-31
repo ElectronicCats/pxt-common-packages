@@ -7,7 +7,7 @@ declare namespace serial {
     //% help=serial/read-string
     //% blockId=serial_read_string block="serial|read stringUntil"
     //% weight=18
-    //% 
+    //% shim=serial::readUntil
     function readUntil(delimiter: string): string;
 
     /**

@@ -54,7 +54,8 @@ namespace pxt {
       WSerial()
         : serial(*LOOKUP_PIN(TX), *LOOKUP_PIN(RX))
         {
-          serial.setBaud((int)BaudRate::BaudRate115200);
+          serial.setBaud((int)BaudRate::BaudRate9600);
+          serial.setRxBufferSize(90);
         }
   };
 
